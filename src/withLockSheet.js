@@ -48,6 +48,9 @@ export default function withLockSheet(WrappedComponent: ComponentType<*>) {
         position: relative !important;
         ${height ? `height: ${height}px !important;` : ''}
         ${paddingRight ? `padding-right: ${paddingRight}px !important;` : ''}
+      }
+      header {
+        ${paddingRight ? `padding-right: ${paddingRight}px !important;` : ''}
       }`;
 
       return styles;
